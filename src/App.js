@@ -7,6 +7,7 @@ function App() {
     <div className="App">
      <Signup/>
      <Login/>
+    Hello
     
     </div>
   );
