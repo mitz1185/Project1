@@ -1,0 +1,115 @@
+<!-- <html>
+    <head>
+    </head>
+    <body>
+        <p id="id"></p>
+        <script>
+            setTimeout(()=>
+            {
+                document.getElementById("id").innerHTML="LJU";
+            },5000);
+        
+        </script>
+    </body>
+</html> -->
+
+<!-- <html>
+<head>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function mydisplay(sum)
+        {
+            document.getElementById("demo").innerHTML="<b>"+ sum +"</b>";
+        }
+        function mycals(num1,num2,mycallback)
+        {
+            sum=num1+num2;
+            mycallback(sum);
+        }
+        mycals(13,15,mydisplay);
+    </script>
+</body>
+</html> -->
+
+<!-- <html>
+    <head>  
+
+    </head>
+    <body>
+        <p id="p1"></p>
+        <script>
+        function add(a,b)
+        {
+            document.getElementById("p1").innerHTML=(a+b);
+            // obj=document.getElementById("p1");
+            // obj.innerHTML=(a+b);
+        }
+        a=2;
+        b=5;
+        setInterval(
+            function()
+            {
+                add(++a,++b);
+            },1000
+        );
+    </script>
+    </body>
+</html> -->
+
+<!-- 
+<html>
+    <body>
+        <p id="demo" style="color:blue"></p>
+        <script>
+            size = 15;
+            function add() {
+    
+                obj = document.getElementById("demo");
+                obj.innerHTML = "hello";
+                obj.style.color ="Blue";
+                obj.style.fontSize = size;
+                if (size <= 50) {
+                    size++;
+                }
+            }
+            setInterval(add, 1000);            
+        </script>
+    </body>
+</html> -->
+
+<html>
+    <head>  
+        <style>
+            p{
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p1"> Hello</p>
+        <button onclick="fun2()">font-size</button>
+        <script>
+        font="2";
+        function fun(font)
+        {
+           document.getElementById("p1").style.fontSize=font;
+        }
+        function fun2()
+        {   
+            setInterval(
+                function()
+                {
+                    if(font<=50)
+                    {
+                        fun(font++);
+                    }
+                },50
+            );
+        }
+    </script>
+    </body>
+</html>
+
+

@@ -1,0 +1,36 @@
+
+<!--Write a js code that display ”Hello” with increasing font size in interval of 50ms in red colour and it should stop when font size reaches to 50px.-->
+<html>
+
+    <body>
+        <p id="demo" style="color:blue"></p>
+        <script>
+            size = 15;
+        //     function add() 
+        //     {
+    
+        //         obj = document.getElementById("demo");
+        //         obj.innerHTML = "hello";
+        //         obj.style.color ="blue";
+        //         obj.style.fontSize = size;
+        //         if (size <= 50) 
+        //         {
+        //             size++;
+        //         }
+        //     }
+        //    setInterval(add,50);   
+            setInterval(() =>
+            {
+    
+                obj = document.getElementById("demo");
+                obj.innerHTML = "hello";
+                obj.style.color ="blue";
+                obj.style.fontSize = size;
+                if (size <= 50) 
+                {
+                    size++;
+                }
+            },50);               
+        </script>
+    </body>
+</html>
